@@ -44,26 +44,23 @@ The organization and representation of these components are defined by their res
 
 ## Package Metadata
 
-Every package shall contain metadata describing the package.
+Every package shall contain package metadata conforming to the [Package Metadata](package-metadata.md) specification.
 
-The metadata shall include, at minimum:
-
-- Package name
-- Version
-- Release
-- Target architecture
-
-Additional metadata is defined separately.
+The package metadata shall provide the information required to identify, verify, and manage the package.
 
 ## Integrity
 
 Packages shall include integrity information allowing corruption to be detected before installation.
+
+The representation of package integrity information is defined by its respective specification.
 
 ## Authenticity
 
 Official packages shall be digitally signed.
 
 Package managers shall verify package signatures before installation.
+
+The representation of digital signatures is defined by its respective specification.
 
 ## Compatibility
 
